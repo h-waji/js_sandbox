@@ -34,26 +34,51 @@ console.log(hello.slice(0, 5));
 console.log(hello.split(' '));
 
 // ----- 配列 -----
-const array = [1, 2, 3, 'hello', false];
-console.log(array[0]);
-console.log(array);
+const arry = [1, 2, 3, 'hello', false];
+console.log(arry[0]);
+console.log(arry);
 
-array.push('push_item');
-console.log(array);
+arry.push('push_item');
+console.log(arry);
 
-array.unshift('unshift_tem');
-console.log(array);
+arry.unshift('unshift_tem');
+console.log(arry);
 
-array.pop();
-console.log(array);
+arry.pop();
+console.log(arry);
 
-array.shift();
-console.log(array);
+arry.shift();
+console.log(arry);
 
+// ----- オブジェクト -----
+const pumpkin = {};
+pumpkin.name = 'PumpKing';
+pumpkin.age = 16;
+console.log(pumpkin);
+console.log(pumpkin.name);
+console.log(pumpkin.age);
 
+const skeleton = {
+  name: ['Ske', 'Leton'],
+  age: 18,
+  gender: 'male',
+  interests: {
+    sports: 'soccer',
+    music: 'piano'
+  },
+  // メソッド
+  getFullName: function() {
+    console.log(this.name[0] + ' ' + this.name[1]);
+  }
+};
 
+console.log(skeleton);
+console.log(skeleton.name[0]);
+console.log(skeleton.interests.music);
+skeleton.getFullName();
 
-
-
-
+// Keyを動的に変更する場合は [] を使う
+const ageKey = 'age';
+skeleton[ageKey] = 80;
+console.log(skeleton.age);
 
