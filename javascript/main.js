@@ -12,7 +12,18 @@ function hello(name, age) {
   return name + age;
 }
 
-const returnValue = hello('Hiro', 36);
-console.log(returnValue);
+const returnHello = hello('Hiro', 36);
+console.log(returnHello);
+
+// ----- 無名関数 -----
+const anonymous = function(name, age) {
+  console.log('Anonymous function: [name: ' + name + ', age: ' + age + ']');
+  return name + age;
+}
+
+const returnAnonymous = anonymous('Aki', '31');
+console.log(returnAnonymous);
+
+
 
 
