@@ -105,6 +105,44 @@ for(let v of numbers){
   console.log(v);
 }
 
+// ----- object, for -----
+console.log('----- object, for -----');
+
+const todos = [
+  {
+    id: 1,
+    title: 'Ruby on Rails',
+    completed: true
+  },
+  {
+    id: 2,
+    title: 'Django',
+    completed: true
+  },
+  {
+    id: 3,
+    title: 'Build a production environment on AWS',
+    completed: false
+  }
+];
+
+for(let i = 0; i < todos.length; i++){
+  let todo = todos[i];
+  if (todo.completed) console.log(i, todo.title);
+}
+
+for(let i in todos){
+  let todo = todos[i];
+  if (todo.completed) console.log(i, todo.title);
+}
+
+for(let todo of todos) {
+  if (todo.completed) console.log(todo.title);
+}
+
+
+
+
 
 
 
