@@ -159,10 +159,28 @@ if(num) {
   console.log('this is false.')
 }
 
+// ----- Arrow function -----
+console.log('----- Arrow function -----');
 
+const ohayo = (oha_name='OhaTaro') => console.log('Ohayo! My name is ' + oha_name);
+ohayo();
+ohayo('Mario');
 
+// 引数1, 初期値不要だと ()省略OK
+const ohayo2 = oha_name2 => console.log('Ohayo! My name is ' + oha_name2);
+ohayo2('Wario');
 
+const ohayo3 = (oha_name3, age) => { return oha_name3 + ', ' + age; }
+console.log(ohayo3('Yoshi', 15));
+// return の省略
+const ohayo4 = (oha_name4, age) => oha_name4 + ', ' + age;
+console.log(ohayo4('Yoshi', 15));
 
+numbers.forEach(function(v) {
+  console.log(v);
+})
+// 省略
+numbers.forEach(v => console.log(v));
 
 
 
