@@ -82,3 +82,30 @@ const ageKey = 'age';
 skeleton[ageKey] = 80;
 console.log(skeleton.age);
 
+// ----- for -----
+console.log('----- for -----');
+
+const numbers = [1, 2, 3, 4, 5];
+
+for(let i = 0; i < numbers.length; i++){
+  console.log(numbers[i]);
+}
+
+// ----- for in -----
+console.log('----- for in -----');
+
+for(let i in numbers){
+  console.log(i);
+}
+
+// ----- for of -----
+console.log('----- for of -----');
+
+for(let v of numbers){
+  console.log(v);
+}
+
+
+
+
+
