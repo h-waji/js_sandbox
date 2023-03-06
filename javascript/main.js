@@ -140,6 +140,26 @@ for(let todo of todos) {
   if (todo.completed) console.log(todo.title);
 }
 
+// ----- ifと比較演算子 -----
+console.log('----- ifと比較演算子 -----');
+
+if(1 === '1') {
+  console.log('this is true.')
+} else {
+  console.log('this is false.')
+}
+
+const num = 0; // null, undefinedもfalse
+const bool = Boolean(num);
+console.log(bool);
+
+if(num) {
+  console.log('this is true.')
+} else {
+  console.log('this is false.')
+}
+
+
 
 
 
