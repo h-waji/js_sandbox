@@ -17,6 +17,8 @@ const returnHello = sayHello('Hiro', 36);
 console.log(returnHello);
 
 // ----- 無名関数 -----
+console.log('----- Anonymous function -----');
+
 const anonymous = function(name, age) {
   console.log('Anonymous function: [name: ' + name + ', age: ' + age + ']');
   return name + age;
@@ -26,6 +28,8 @@ const returnAnonymous = anonymous('Aki', '31');
 console.log(returnAnonymous);
 
 // ----- property, method -----
+console.log('----- property, method -----');
+
 console.log('hello.length: ' + hello.length);
 
 console.log(hello.toUpperCase());
@@ -34,6 +38,8 @@ console.log(hello.slice(0, 5));
 console.log(hello.split(' '));
 
 // ----- 配列 -----
+console.log('----- array -----');
+
 const arry = [1, 2, 3, 'hello', false];
 console.log(arry[0]);
 console.log(arry);
@@ -51,6 +57,8 @@ arry.shift();
 console.log(arry);
 
 // ----- オブジェクト -----
+console.log('----- object -----');
+
 const pumpkin = {};
 pumpkin.name = 'PumpKing';
 pumpkin.age = 16;
@@ -181,6 +189,55 @@ numbers.forEach(function(v) {
 })
 // 省略
 numbers.forEach(v => console.log(v));
+
+// ----- Callback function -----
+console.log('----- Callback function -----');
+
+function sayNice(callback) {
+  console.log('Nice! My name is ' + callback());
+}
+
+function getName() {
+  return 'Miku';
+}
+
+sayNice(getName);
+
+// 無名関数を渡す場合
+sayNice(function (){
+  return 'MikuMiku';
+});
+
+// アロー関数を渡す場合
+sayNice(() => 'MikuMikuMiku');
+
+// 引数を渡してコールバック
+function sayGood(callback, firstname) {
+  console.log('Good! My name is ' + callback(firstname));
+}
+
+sayGood(function(name){
+  return name + ' Hatsune';
+}, 'Miku');
+
+sayGood(n => n + ' Hatsune', 'Miku');
+
+// ----------
+function doSomething(a, b, callback) {
+  const result = callback(a, b);
+  console.log(result);
+}
+
+function multiply(a, b) {
+  return a * b;
+}
+
+function plus(a, b) {
+  return a + b;
+}
+
+doSomething(3, 5, multiply);
+doSomething(3, 5, plus);
 
 
 
