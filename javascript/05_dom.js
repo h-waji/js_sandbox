@@ -66,5 +66,5 @@ function changeBackground() {
 btn.addEventListener("click", changeColor);
 btn.addEventListener("click", changeBackground);
 
-btn.removeEventListener('click', changeBackground);
-btn.addEventListener('mouseenter', changeBackground);
+// btn.removeEventListener('click', changeBackground);
+// btn.addEventListener('mouseenter', changeBackground);
