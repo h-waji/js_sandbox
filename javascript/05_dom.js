@@ -49,3 +49,22 @@ h1.classList.remove("u-line-green");
 h1.classList.toggle("u-line-green");
 h1.classList.toggle("u-line-green");
 h1.classList.toggle("u-line-green");
+
+// ----- addEventListener -----
+const btn = document.querySelector("#btn");
+
+btn.addEventListener("click", () => alert("Dokkaaan!"));
+
+function changeColor() {
+  h1.style.color = "red";
+}
+
+function changeBackground() {
+  document.body.style.background = "orange";
+}
+
+btn.addEventListener("click", changeColor);
+btn.addEventListener("click", changeBackground);
+
+btn.removeEventListener('click', changeBackground);
+btn.addEventListener('mouseenter', changeBackground);
