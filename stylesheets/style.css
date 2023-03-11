@@ -1,3 +1,7 @@
 body {
   font-family: cursive;
 }
+
+.u-line-green {
+  text-decoration: green wavy underline;
+}

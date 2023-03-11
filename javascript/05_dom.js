@@ -21,14 +21,14 @@ firstLi.style.color = "black";
 let items = document.querySelectorAll(".item");
 console.log(items);
 
-items = document.querySelectorAll('ul > li');
+items = document.querySelectorAll("ul > li");
 console.log(items);
 
-const li = document.querySelectorAll('li');
-li[1].style.color = 'purple';
+const li = document.querySelectorAll("li");
+li[1].style.color = "purple";
 
 items = document.querySelectorAll(".item2");
-items.forEach(node => node.style.color = 'blue');
+items.forEach((node) => (node.style.color = "blue"));
 
 // ----- innerHTML, textContent -----
 const span = document.querySelector(".spncls");
@@ -37,4 +37,15 @@ span.style.color = "yellow";
 console.log(h2.innerHTML);
 console.log(h2.textContent);
 
-h2.style.backgroundColor = 'lightgreen';
+h2.style.backgroundColor = "lightgreen";
+
+// ----- classList -----
+const h1 = document.querySelector("h1");
+console.log(h1.classList);
+h1.classList.add("u-line-green");
+console.log(h1.classList);
+h1.classList.remove("u-line-green");
+
+h1.classList.toggle("u-line-green");
+h1.classList.toggle("u-line-green");
+h1.classList.toggle("u-line-green");
