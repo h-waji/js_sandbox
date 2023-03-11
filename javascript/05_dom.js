@@ -29,3 +29,12 @@ li[1].style.color = 'purple';
 
 items = document.querySelectorAll(".item2");
 items.forEach(node => node.style.color = 'blue');
+
+// ----- innerHTML, textContent -----
+const span = document.querySelector(".spncls");
+span.style.color = "yellow";
+
+console.log(h2.innerHTML);
+console.log(h2.textContent);
+
+h2.style.backgroundColor = 'lightgreen';
