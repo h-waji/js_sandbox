@@ -1,12 +1,3 @@
-body {
-  font-family: cursive;
-}
-
-.u-line-green {
-  -webkit-text-decoration: green wavy underline;
-          text-decoration: green wavy underline;
-}
-
 #container {
   position: relative;
   height: 100vh;
@@ -93,4 +84,4 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=06_style.css.map */

@@ -1,13 +1,5 @@
 @use "mixin" as *;
 
-body {
-  font-family: cursive;
-}
-
-.u-line-green {
-  text-decoration: green wavy underline;
-}
-
 #container {
   position: relative;
   height: 100vh;
@@ -56,5 +48,3 @@ body {
     transform: translateY(0);
   }
 }
-
-
