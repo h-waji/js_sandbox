@@ -1,3 +1,23 @@
 body {
-  font-family: cursive;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+.p-b-10 {
+  padding-bottom: 10px;
+}
+
+.lnk {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 10px;
+  border: solid 3px #ccc;
+  background-color: #fff;
+  font-size: 1.5em;
+}
+.lnk:hover {
+  background-color: #333;
+  color: white;
+  text-decoration: none;
 }/*# sourceMappingURL=base.css.map */
