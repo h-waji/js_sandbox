@@ -10,6 +10,8 @@ header {
 }
 
 nav {
+  height: 100px;
+
   ul {
     margin: 0;
     padding: 0;
@@ -102,5 +104,9 @@ nav {
 }
 
 .dummy {
-  height: 2000px;
+  height: 500px;
+}
+
+.scrolled {
+  background-color: aquamarine;
 }
