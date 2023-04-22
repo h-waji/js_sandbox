@@ -9,3 +9,15 @@ request.onload = function() {
 };
 
 request.send();
+
+
+// ----- fetch -----
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+
+fetch('https://jsonplaceholder.typicode.com/users/1')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
